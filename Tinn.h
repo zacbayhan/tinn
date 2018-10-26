@@ -1,7 +1,6 @@
 #pragma once
 
-typedef struct
-{
+typedef struct {
     // All the weights.
     float* w;
     // Hidden to output layer weights.
@@ -22,8 +21,7 @@ typedef struct
     int nhid;
     // Number of outputs.
     int nops;
-}
-Tinn;
+} Tinn;
 
 float* xtpredict(Tinn, const float* in);
 
