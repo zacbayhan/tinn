@@ -9,7 +9,7 @@ CC = gcc
 SRC = test.c Tinn.c
 
 all:
-	$(CC) $(CFLAGS) $(LDFLAGS) $(SRC) -o $(BIN)
+	$(CC) $(CFLAGS) $(SRC) -o $(BIN) $(LDFLAGS)
 
 run:
 	./$(BIN)
